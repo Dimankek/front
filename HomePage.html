@@ -1,0 +1,224 @@
+﻿<!doctype html>
+<html>
+<head>
+<style>
+  #header
+        {
+			background: black;		
+			background: rgba(0, 0, 0, 0.7);
+			margin-left: 20%;  
+            height: 53.4px;			
+            width: 60%;
+        }
+	#map
+	{
+			margin-left: 18%;
+            height: 54px;			
+            width: 100%;
+	
+	}
+
+
+.image-flex {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}	
+
+
+		        a.button1 {
+           display: inline-block;
+            font-family: arial,sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            color: rgb(68,68,68);
+			text-decoration: none;
+            user-select: none;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            outline: none;
+            border: 1px solid rgba(0,0,0,.1);
+            border-radius: 2px;
+            background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+            transition: all .218s ease 0s;
+			float: right;
+		}
+        a.button1:hover {
+            color: rgb(24,24,24);
+            border: 1px solid rgb(198,198,198);
+            background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+            box-shadow: 0 1px 2px rgba(0,0,0,.1);
+        }
+        a.button1:active {
+            color: rgb(51,51,51);
+            border: 1px solid rgb(204,204,204);
+            background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+            box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+        }
+    a.button2 {
+           display: inline-block;
+            font-family: arial,sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            color: rgb(68,68,68);
+			text-decoration: none;
+            user-select: none;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            outline: none;
+            border: 1px solid rgba(0,0,0,.1);
+            border-radius: 2px;
+            background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+            transition: all .218s ease 0s;
+			float: left;
+		}
+	a.button2:hover {
+            color: rgb(24,24,24);
+            border: 1px solid rgb(198,198,198);
+            background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+            box-shadow: 0 1px 2px rgba(0,0,0,.1);
+        }
+    a.button2:active {
+            color: rgb(51,51,51);
+            border: 1px solid rgb(204,204,204);
+            background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+            box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+        }
+		
+		
+		
+		a.button3{
+  background:#eee;
+  color:#088;
+  text-decoration:none;
+  display:block;
+  width:75px;
+  text-align:center;
+  margin:20px;
+  padding:5px 5px;
+  transition:all 0.3s;
+  }
+ a.button3:hover{
+  box-shadow:0px -5px 0 #088 inset;
+}
+
+.SpP
+{
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	border-top: 7px solid #9baff1;
+	border-bottom: 7px solid #9baff1;
+}
+
+
+
+
+.mail
+{
+
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	border-top: 7px solid #9baff1;
+	border-bottom: 7px solid #9baff1;
+
+}
+</style>
+</head>
+
+
+<body>
+
+
+<div id="header">
+	<a href="HomePage.html"	class="button2"><h3>Home</h3></a>
+    <a href="index.html" 	class="button1"><h3>Login</h3></a>
+    
+
+</div>
+
+
+<div class="image-wrap image-flex" >
+  <img src="main.jpg" >
+</div>
+
+
+
+ <p align="center"> <big><big><big><big>Автомастерская к вашим услугам</big></big></big></big></p>
+ <p align="center"><big>Быстро, профессионально и надежно</big></p>
+ 
+ 
+ 
+</br></br>
+
+<div id="part">
+<table class="SpP">
+<tr><th>
+ <p align="center"> <big><big><big><big>Запчасти</big></big></big></big></p>
+
+ <p align="center"><big>Введите Марку и модель машины</big></p>
+</th> 
+
+</br></br>
+
+<th>
+         </br><input type='text' ng-model="car"></br> </br>
+        <input type='text' ng-model="car.Name"></br> </br>
+        <input type="button" ng-click="createGroup(newGroup)" value ="Найти запчасти"> </br> </br>
+</th></tr>		
+</table>
+
+</div>
+</br></br>
+</br></br>
+</br></br>
+
+
+<div>
+ <p align="center"> <big><big><big><big>Часы работы</big></big></big></big></p>
+ <p align="center"><big>Добро пожаловать</big></p>
+ <p align="center"><big>Пн-Пт:  09:00-20:00</big></p>
+ <p align="center"><big>Сб-Вс:  12:00-18:00</big></p>
+</div> 
+ 
+</br></br>
+</br></br>
+</br></br>
+
+
+<div>
+<table class="mail">
+<tr><th> <p align="center"> <big><big><big><big>Свяжитесь с нами</big></big></big></big></p>
+</br>
+<p align="center"><big>mittay@gamil.com</big></p>
+</th>
+
+<th> 
+  </br>
+  <input type='text' ng-model="Имя">
+  </br> </br>
+  <input type='text' ng-model="Эл. почта">
+  </br>  </br>
+  <input type='text' ng-model="Телефон">
+  </br>  </br>
+  <textarea name="Что хотите сделать"></textarea>
+	</br>  </br>
+	  <input type="button" ng-click="createGroup(newGroup)" value ="Отправить">
+	    </br>   </br>
+	</th></tr>
+</table>	  
+</div>
+</br></br>
+</br></br>
+
+<div id="map">
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae3b7a001bddac16512b3ce75590fe8b7af3b57043e3ec8869d0c5041f323e26e&amp;width=1280&amp;height=689&amp;lang=ru_RU&amp;scroll=true"></script>
+</div>
+
+</div>
+
+</body>
+</html>
